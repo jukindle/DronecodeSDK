@@ -17,7 +17,13 @@ Setting up DronecodeSDK
 4. Pull all submodules
 	git submodule update --recursive --remote
 
+Download precompiled libraries using Docker
 
+1. Install docker
+	sudo apt install dockerio
+2. Download stuff
+	sudo docker run --rm -it -v $HOME/DronecodeSDK:/root/DronecodeSDK:rw dronecode/dronecode-sdk-ubuntu-16.04 bash
+	
 Compile the SDK system wide
 
 1. Clean everything
