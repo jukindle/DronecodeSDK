@@ -46,7 +46,7 @@ Install the simulator
 	
 
 
-Now, you're ready to go!
+================= Now, you're ready to go! =================
 
 Launch the simulator
 
