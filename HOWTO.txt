@@ -28,3 +28,20 @@ Compile the SDK system wide
 	make default
 3. Apply system wide
 	sudo make default install
+
+
+Now, you're ready to go!
+
+About example1
+
+Our code is located in DronecodeSDK/KnightsOfNyquist. Here, you find the folder example1. In that folder, a cpp script is written, called example1.cpp
+
+One compiles that script and executes it afterwards.
+
+1. Compile the script
+	source compile.sh
+A new folder build is generated.
+2. Switch to build folder
+	cd build
+3. Execute the executable in there with the IP addr of the drone (in our case, the simulator)
+	./example1 udp://:14540
