@@ -12,18 +12,14 @@ Setting up DronecodeSDK
 	git clone https://github.com/jukindle/DronecodeSDK.git
 2. Change directory
 	cd DronecodeSDK
-3. Clone all subrepositories
+3. Checkout master branch
+	git checkout master
+4. Pull master branch
+	git pull
+5. Clone all subrepositories
 	git submodule update --init --recursive
-4. Pull all submodules
-	git submodule update --recursive --remote
 
-Download precompiled libraries using Docker
 
-1. Install docker
-	sudo apt install dockerio
-2. Download stuff
-	sudo docker run --rm -it -v $HOME/DronecodeSDK:/root/DronecodeSDK:rw dronecode/dronecode-sdk-ubuntu-16.04 bash
-	
 Compile the SDK system wide
 
 1. Clean everything
