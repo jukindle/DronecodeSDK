@@ -1,4 +1,4 @@
-Prepare everything
+Prepare everything FOR C++
 
 1. Open Terminal
 2. Create new folder
@@ -37,6 +37,20 @@ Compile the SDK system wide
 	make default
 3. Apply system wide
 	sudo make default install
+
+
+Prepare everything FOR PYTHON
+1. 
+	sudo apt-get install python-lxml
+2. Clone repo
+	git clone https://github.com/jukindle/dronekit-python.git
+
+3.
+	sudo python setup.py build
+4.
+	sudo python setup.py install
+	
+
 
 Install the simulator
 
