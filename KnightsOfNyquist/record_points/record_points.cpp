@@ -88,10 +88,10 @@ int main(int argc, char **argv)
     // Set up callback to monitor altitude while the vehicle is in flight
     telemetry->position_async([](Telemetry::Position position) {
         std::cout << TELEMETRY_CONSOLE_TEXT // set to blue
-                  << "Altitude: " << position.relative_altitude_m << " m"
+                  << "Altitude: " << position.absolute_altitude_m << " m"
                   << NORMAL_CONSOLE_TEXT // set to default color again
                   << std::endl;
-        heights.push_back(position.relative_altitude_m);
+        heights.push_back(position.absolute_altitude_m);
         longs.push_back(position.longitude_deg);
         lats.push_back(position.latitude_deg);
     });
